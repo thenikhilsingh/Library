@@ -19,7 +19,7 @@ nav {
 
 main {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   height: 85vh;
 }
 
@@ -29,7 +29,6 @@ main {
   font-size: 25px;
   font-weight: bold;
   border-radius: 10px;
-  margin: 50px;
   background-color: white;
 }
 
@@ -39,16 +38,94 @@ main {
 }
 
 .addBtnPopupCont {
-  background-image: linear-gradient(160deg, #ffffff 0%, #d6e4e4 100%);
-  box-shadow: 5px 1px 6px rgb(47, 45, 45);
-  display: flex;
+  background-color: #d7d7dc;
+  background-image: linear-gradient(160deg, #d7d7dc 0%, #9fa7a7 100%);
+  display: none;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 40vh;
+  height: 55vh;
   width: fit-content;
   padding: 30px;
   position: relative;
   bottom: 500px;
   left: 550px;
+  border-radius: 15px;
+}
+
+.addBtnPopupCont h1 {
+  font-size: 30px;
+}
+
+#titleInp,
+#authorInp,
+#pagesInp {
+  width: 300px;
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+  margin: 10px;
+  padding-left: 10px;
+}
+
+#submit {
+  padding: 10px 20px 10px 20px;
+  border-radius: 10px;
+  border: none;
+  background-color: aqua;
+}
+
+.addbtnContainer {
+  margin: 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.library {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.bookCont {
+  height: 300px;
+  width: 300px;
+  background-color: #ffffff;
+  background-image: linear-gradient(160deg, #ffffff 0%, #d6e4e4 100%);
+  box-shadow: 5px 1px 6px rgb(47, 45, 45);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.5rem;
+  margin: 30px;
+}
+
+.readstatusbtn {
+  border-radius: 10px;
+  /* padding: 5px 90px 5px 90px; */
+  width: 240px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #82e982;
+  border: none;
+}
+.removebtn {
+  border-radius: 10px;
+  padding: 5px 75px 5px 75px;
+  background-color: white;
+  border: none;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+form div {
+  align-self: center;
 }

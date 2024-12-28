@@ -21,25 +21,21 @@
   <body>
     <nav>Library</nav>
     <main>
-      <div><button id="addBtn">+ Add Book</button></div>
+      <div class="addbtnContainer"><button id="addBtn">+ Add Book</button></div>
       <div class="library"></div>
     </main>
     <div class="addBtnPopupCont">
       <h1>Add new book</h1>
-      <table>
-        <tr>
-          <td><input type="text" placeholder="Title" /></td>
-        </tr>
-        <tr>
-          <td><input type="text" placeholder="Author" /></td>
-        </tr>
-        <tr>
-          <td><input type="text" placeholder="Pages" /></td>
-        </tr>
-      </table>
-      <div><label for="readit">Have you read it?</label> <input id="readit" type="checkbox"></div>
-      <div><button id="submit">Submit</button></div>
-    </div>
+      <form>
+        <input id="titleInp" type="text" placeholder="Title" required />
+        <input id="authorInp" type="text" placeholder="Author" required />
+        <input id="pagesInp" type="text" placeholder="Pages" required />
+        <div>
+          <label for="readstatusInp">Have you read it?</label>
+          <input id="readstatusInp" type="checkbox" />
+        </div>
+      <button id="submit">Submit</button>
+      </form>
     <script src="script.js"></script>
   </body>
 </html>
