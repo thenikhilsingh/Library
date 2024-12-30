@@ -24,7 +24,7 @@ function addBookToLibrary(t, a, p, r) {
   let book = new Book(t, a, p, r);
   myLibrary.push(book);
 }
-addBookToLibrary("The Alchemist", " Paulo Coelho", 500, false);
+addBookToLibrary("The Alchemist", " Paulo Coelho", 500, true);
 addBookToLibrary("War and Peace", "Leo Tolstoy", 1230, true);
 
 function funcThatLoops() {
