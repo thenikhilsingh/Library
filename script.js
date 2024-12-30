@@ -24,8 +24,8 @@ function addBookToLibrary(t, a, p, r) {
   let book = new Book(t, a, p, r);
   myLibrary.push(book);
 }
-addBookToLibrary("Harry Potter", "JK Rowlings", 500, false);
-addBookToLibrary("abhay", "Nikhil", 800, true);
+addBookToLibrary("The Alchemist", " Paulo Coelho", 500, false);
+addBookToLibrary("War and Peace", "Leo Tolstoy", 1230, true);
 
 function funcThatLoops() {
   library.innerHTML = "";
@@ -85,24 +85,26 @@ function displayBookToLibrary(t, a, p, r, iD) {
     funcThatLoops();
   });
 
-  if (readstatusInp.checked == true) {
+  if (r == true) {
     readstatusBtn.style.background = "#82e982";
+    readstatusBtn.innerHTML = "Read";
   } else {
     readstatusBtn.style.background = "#ff5452";
+    readstatusBtn.innerHTML = "Not Read";
   }
 
-  let readstatusBtnflag = false;
+  let readstatusBtnflag = r;
   readstatusBtn.addEventListener("click", () => {
     if (readstatusBtnflag == false) {
       readstatusBtnflag = true;
       readstatusBtn.innerHTML = "Read";
       readstatusBtn.style.background = "#82e982";
-      readstatusInp.checked == true;
+      readstatusInp.checked = true;
     } else {
       readstatusBtnflag = false;
       readstatusBtn.innerHTML = "Not Read";
       readstatusBtn.style.background = "#ff5452";
-      readstatusInp.checked == false;
+      readstatusInp.checked = false;
     }
   });
 }
