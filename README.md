@@ -27,9 +27,9 @@ To run the project locally:
    ```bash
    git clone https://github.com/thenikhilsingh/Library.git
    
-2. Navigate to the project directory
+2. Navigate to the project directory </br>
 cd Library
 
-3. Open the app in your browser
+4. Open the app in your browser </br>
 Open index.html with any browser or use Live Server
 
